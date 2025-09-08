@@ -46,7 +46,7 @@ const ExpenseTracker = () => {
         setEndDate={setEndDate}
       />
 
-      {/* Toggle buttons */}
+    
       <div className="view-toggle">
         <button
           className={view === "table" ? "active" : ""}
@@ -62,7 +62,7 @@ const ExpenseTracker = () => {
         </button>
       </div>
 
-      {/* Conditional rendering */}
+     
       {view === "table" ? (
         <ExpenseTable expenses={filteredExpenses} />
       ) : (

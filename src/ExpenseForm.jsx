@@ -20,7 +20,7 @@ const ExpenseForm = ({ onAdd }) => {
 
     setAmount("");
     setCategory("");
-    onAdd(); // refresh
+    onAdd(); 
   };
 
   return (

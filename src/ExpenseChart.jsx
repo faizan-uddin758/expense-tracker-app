@@ -11,7 +11,7 @@ import {
 } from "recharts";
 
 const ExpenseChart = ({ expenses }) => {
-  // Group expenses by month
+  
   const monthlyData = expenses.reduce((acc, exp) => {
     const month = exp.date.toLocaleString("default", { month: "short", year: "numeric" });
     if (!acc[month]) acc[month] = 0;
@@ -36,7 +36,7 @@ const ExpenseChart = ({ expenses }) => {
             labelStyle={{ fontWeight: "bold", color: "#444" }}
           />
           <Legend />
-          {/* Gradient */}
+          
           <defs>
             <linearGradient id="expenseGradient" x1="0" y1="0" x2="0" y2="1">
               <stop offset="0%" stopColor="#6a11cb" stopOpacity={0.9} />   {/* Purple */}
